@@ -129,7 +129,7 @@ async function delay(ms) {
   });
 }
 
-// Промис, который резолвится, если видео целиком готово к проинрыванию без пауз
+// Промис, который резолвится, если видео целиком готово к проигрыванию без пауз
 
 async function waitForReadyVideo(video) {
   return await new Promise((resolve) => {
