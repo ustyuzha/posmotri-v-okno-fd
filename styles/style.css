@@ -97,6 +97,14 @@ ol {
   text-decoration: underline;
 }
 
+.search-form__label:focus-within {
+  text-decoration: none;
+}
+
+.search-form__label:active {
+  text-decoration: none;
+}
+
 .search-form__label:has(:not(:active):focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -157,18 +165,18 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 19px;
   width: 19px;
   border: 1px solid #fff;
-  padding: 1px;
   background-color: transparent;
 }
 
 .search-form__pseudo-checkbox::after {
-  position: absolute;
   content: '';
+  display: block;
   width: 15px;
   height: 15px;
 }
